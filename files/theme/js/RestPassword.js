@@ -17,7 +17,11 @@ button.onclick = async () => {
 
   console.log(data);
 
-  fetch('https://sa-p-newbrokerbackend.onrender.com/api/forgotpassword', {
+  const urlParams = new URLSearchParams(window.location.search);
+const id = urlParams.get('id');
+console.log(id)
+
+  fetch('https://sa-p-newbrokerbackend.onrender.com/api/restLink/', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
