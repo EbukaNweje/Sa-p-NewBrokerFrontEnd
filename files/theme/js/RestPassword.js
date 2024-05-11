@@ -1,16 +1,18 @@
 
-const email = document.getElementById('email')
+const password = document.getElementById('password')
+const cpassword = document.getElementById('cpassword')
 const button = document.getElementById('forgetPwdBtn')
 console.log(button);
 
 // console.log(password);
 
-button.onclick = async (  ) => {
+button.onclick = async () => {
   event.preventDefault();
   button.innerHTML = "Loading...";
 
   const data = {
-    email: email.value,
+    password: password.value,
+    Confirmpassword: cpassword.value,
   };
 
   console.log(data);
@@ -26,7 +28,7 @@ button.onclick = async (  ) => {
     .then(response => {
       console.log(response)
       alert(response.message)
-      window.location = "index.html"
+    //   window.location = "index.html"
     })
     .catch((error) => {
       console.log(error.message);
