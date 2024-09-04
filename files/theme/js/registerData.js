@@ -69,7 +69,7 @@ button.onclick = async (event) => {
       console.log(response)
       const userId = JSON.parse(localStorage.getItem('userId'))
       console.log("Local User Id", userId);
-      window.location.href = `https://premium-crypt-account.vercel.app/`;
+      window.location.href = `https://premium-crypt-account.vercel.app/#/${userId._id}`;
       }
       
       

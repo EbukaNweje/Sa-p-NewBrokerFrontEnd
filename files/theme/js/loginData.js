@@ -49,11 +49,14 @@ button.onclick = async (event) => {
       console.log(response)
       const userId = localStorage?.getItem('userId')
       console.log("Local User Id", userId);
-      if (response.message === 'User have not been verified'){
-        window.location = `https://premium-crypt-account.vercel.app/`;
-        console.log("object");
-        return
-      } else if (response._id === '' || response._id === undefined){
+
+      // if (response.message === 'User have not been verified'){
+      //   window.location = `https://premium-crypt-account.vercel.app/`;
+      //   console.log("object");
+      //   return
+      // } else
+
+      if (response._id === '' || response._id === undefined){
         alert('Please enter your valid credentials');
         button.innerHTML = "Sign In";
         console.log("object");
