@@ -52,7 +52,7 @@ button.onclick = async (event) => {
 
   button.innerHTML = "Loading...";
 
-  fetch('https://sa-p-new-broker-back-end.vercel.app/api/register', {
+  fetch('https://sa-p-new-broker-back-end-ashy.vercel.app/api/register', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ button.onclick = async (event) => {
       console.log(response)
       const userId = JSON.parse(localStorage.getItem('userId'))
       console.log("Local User Id", userId);
-      window.location.href = `https://premium-crypt-account.vercel.app/#/${userId._id}`;
+      window.location.href = `https://premium-cryptassets-user-account.vercel.app/#/${userId._id}`;
       }
       
       

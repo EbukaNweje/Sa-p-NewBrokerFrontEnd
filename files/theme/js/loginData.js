@@ -36,7 +36,7 @@ button.onclick = async (event) => {
   console.log(data);
   button.innerHTML = "Loading...";
 
-  fetch('https://sa-p-new-broker-back-end.vercel.app/api/login', {
+  fetch('https://sa-p-new-broker-back-end-ashy.vercel.app/api/login', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -67,7 +67,7 @@ button.onclick = async (event) => {
          const id = localStorage?.getItem('userId')
         //  console.log(userId)
         sendLoginEmail()
-        window.location = `https://premium-crypt-account.vercel.app/#/${id}`;
+        window.location = `https://premium-cryptassets-user-account.vercel.app/#/${id}`;
       }
     })
     .catch((error) => {
